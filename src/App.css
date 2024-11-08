@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Ramabhadra&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Ramabhadra&family=Rowdies:wght@300;400;700&display=swap');
+
+.imagerbox{
+    width: 100%;
+}
+.maincontainer{
+    font-family: "Rowdies", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  background-color: #E12727;
+  
+}
+/* .main-box{
+    background-image: url(../src/assets/background.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+} */
+.head{
+    font-family: "Rowdies", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+.para{
+    font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.imagecl{
+    width: 120%;
+    
+    filter: drop-shadow(-5px 5px 15px  red);
+}
+.button{
+    
+    height: 50px;
+    background-color: #E12727;
+    color: aliceblue;
+    font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  border-radius: 10px;
+}
+.button:hover{
+    
+    height: 50px;
+    background-color: black;
+    color: aliceblue;
+    font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  border-radius: 10px;
+  outline-style: solid;
+  outline-color: #E12727;
+  transition-duration: 800ms;
+}
+.button-outline{
+    height: 50px;
+    
+    color: aliceblue;
+    font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  border-radius: 10px;
+  outline-style: solid;
+  outline-color: #E12727;
+  
+}
+.button-outline:hover{
+    height: 50px;
+    background-color: #E12727;
+    color: aliceblue;
+    font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  border-radius: 10px;
+  
+  transition-duration: 800ms;
+}
+.fitcontent{
+
+  width: 500px;
+  height: 600px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 55px;
+  box-sizing: border-box;
+  box-shadow: -5px 5px 15px  red;
+}
+.brandimg{
+  height: 25px;
+  filter: invert(91%) sepia(53%) saturate(63%) hue-rotate(30deg) brightness(100%) contrast(113%);
+    opacity: 100;
+}
