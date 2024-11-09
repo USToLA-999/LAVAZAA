@@ -19,7 +19,7 @@ export const Corousel = () => {
         <div className="headlinerbox mt-5 ">
           <div className="head headbox flex justify-center item-center">
             <div className="headline">
-              <h1 className="sm:text-6xl text-4xl">Our New Arrivals</h1>
+              <h1 className="sm:text-6xl text-4xl underline underline-offset-8 decoration-red-800">Our New Arrivals</h1>
             </div>
           </div>
         </div>
@@ -47,7 +47,6 @@ export const Corousel = () => {
                 
               }}
             >
-
               <SwiperSlide>
                 <img src={arr1} alt="aaq" className="fitcontent" />
               </SwiperSlide>

@@ -100,3 +100,9 @@
   filter: invert(91%) sepia(53%) saturate(63%) hue-rotate(30deg) brightness(100%) contrast(113%);
     opacity: 100;
 }
+.card-boxer{
+  border-radius: 25px;
+}
+.imgbox{
+  width:300px;
+} 

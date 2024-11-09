@@ -8,6 +8,7 @@ import Navbar from "./components/Navbar";
 import Main from "./components/Main";
 import { Corousel } from "./components/corousel";
 import Branding from "./components/Branding";
+import Recommded from "./components/Recommded";
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <Main/>
       <Corousel />
       <Branding/>
+      <Recommded/>
     </>
   );
 }
