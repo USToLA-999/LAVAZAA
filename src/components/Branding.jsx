@@ -12,7 +12,7 @@ const Branding = () => {
       <div className="container mx-auto">
         <div className="feature-headline  ">
           <div className="conatinerbox-main flex  justify-center items-center mx-auto mt-5">
-                <div className="headliner para mt-5 pb-5">
+                <div className="headliner para  pb-5">
                     <h1 className="text-2xl underline underline-offset-8 decoration-red-800 "> As Featured in</h1>
                 </div>
           </div>

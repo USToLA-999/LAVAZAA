@@ -1,4 +1,4 @@
-import React from "react";
+
 import mixer from "../assets/coffemixer.jpg";
 import coffee from "../assets/cofee.jpg";
 import mug from "../assets/mug.jpg";

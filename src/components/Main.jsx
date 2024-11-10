@@ -25,7 +25,7 @@ const Main = () => {
               <div className="buttonbox mt-5 mb-5 w-full sm:px-5 sm:py-5  gap-5 sm:flex sm:justify-start sm:items-center text-center  ">
                 <div className="firstbox">
 
-                    <button className="button w-56 mt-5 sm:text-2xl text-md">Let's share beans</button>
+                    <button className="button w-56 mt-5 sm:text-2xl text-md">Lets share beans</button>
                 </div>
                 <div className="secondbox">
                    <button  color="error" className="button-outline  w-48 mt-5 sm:text-2xl text-md">More Info</button>  

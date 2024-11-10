@@ -9,6 +9,9 @@ import Main from "./components/Main";
 import { Corousel } from "./components/corousel";
 import Branding from "./components/Branding";
 import Recommded from "./components/Recommded";
+import Getintouch from "./components/Getintouch";
+import Footer from "./components/Footer";
+
 
 
 function App() {
@@ -21,6 +24,8 @@ function App() {
       <Corousel />
       <Branding/>
       <Recommded/>
+      <Getintouch />
+      <Footer/>
     </>
   );
 }
