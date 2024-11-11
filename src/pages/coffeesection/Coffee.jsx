@@ -1,51 +1,93 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState } from "react";
 import {
-    Card,
-    CardActionArea,
-    CardContent,
-    CardMedia,
-    Typography,
-  } from "@mui/material";
+  Card,
+  CardActionArea,
+  CardContent,
+  CardMedia,
+  Typography,
+} from "@mui/material";
+import { CiHeart } from "react-icons/ci";
+import { MdOutlineArrowRight } from "react-icons/md";
 
 const Coffee = () => {
+  const [products, setProduct] = useState([]);
 
-    const [products, setProduct] = useState([]);
-
-    useEffect(() => {
-        fetch("https://fake-coffee-api.vercel.app/api")
-    .then((res) => res.json())
-    .then((data) => setProduct(data));
-    }, [])
-    console.log(products);
-    
+  useEffect(() => {
+    fetch("https://fake-coffee-api.vercel.app/api")
+      .then((res) => res.json())
+      .then((data) => setProduct(data));
+  }, []);
+  
   return (
-    <div className='main-container text-white'>
-        <div className="container mx-auto pt-5 pb-5">
-            <div className="headlinerbox mt-5 ">
-                <div className="head headbox  flex justify-center items-center">
-                    <div className="headline text-center">
-                        <h1 className="sm:text-4xl text-4xl underline underline-offset-8 decoration-red-800">
-                            Our all Coffee Products
-                        </h1>
-                    </div>
-                </div>
-                <hr className='text-red-600 bg-red-600 mt-10 mb-5'></hr>
-            </div>
-            <div className="main-cardbox flex md:flex-row flex-col  sm:mt-10 sm:mb-10 gap-5 ">
-                <div className="card-box  mx-auto mt-5 mb-5   ">
-                    <div className="card-boxer flex justify-center items-center   ">
-                        <ul className='sm:flex flex-1 w-64 text-center items-center justify-center gap-5 '>
-
-                            {products.map((product) =><li className='flex flex-1 justify-center items-center mx-auto mt-5 mb-5' key={product._id}>{product.name}</li> )}
-                        </ul>
-                  
-                    </div>
-                </div>
-            </div>
+    <div className=" text-white">
+      <div className="container mx-auto px-4 py-10">
+        
+        {/* Section Header */}
+        <div className="text-center mb-10">
+          <h1 className="text-3xl sm:text-4xl font-bold underline underline-offset-8 decoration-red-800">
+            Our Coffee Products
+          </h1>
+          <hr className="mt-28 border-red-600 "  />
         </div>
-    </div>
-    
-  )
-}
 
-export default Coffee
+        {/* Card Container */}
+        <div className=" grid grid-cols- md:grid-cols-2  lg:grid-cols-4 gap-8">
+          {products.map((product) => (
+            <Card variant="body2"   sx={{ backgroundColor: 'black', color:'white',borderRadius:5, boxSizing:'border-box' , boxShadow:'0 0 20px red' }}
+              key={product._id}
+              className=" text-white rounded-xl overflow-hidden shadow-lg"
+            >
+              <CardActionArea >
+                <CardMedia
+                  component="img"
+                  height="200"
+                  image={product.image_url}
+                  alt={product.name}
+                />
+                <CardContent className="p-4" >
+                  <Typography   gutterBottom  component="div" className="font-bold ">
+                    <p className="head text-xl">
+                      Name:  {product.name}
+                    </p>
+                    
+                  </Typography>
+                  <Typography >
+                    <p className="para"> {product.description}</p>
+                  </Typography>
+                  <Typography className=" text-lg font-semibold">
+                    <p className="mt-5 mb-5 para text-xl">Price: <br/>${product.price}</p>
+                  </Typography>
+                  <Typography className="text-sm">
+                    <p className="mt-5 mb-5 para text-xl">Region: <br/>{product.region}</p>
+                  </Typography>
+                  <Typography className="mt-1 text-sm">
+                    <p className="mt-5 mb-5 para text-lg"> Weight: <br/>{product.weight} </p>
+                  </Typography>
+                  <Typography className="mt-1 text-sm">
+                    <p className="mt-5 mb-5 para text-lg"> Roast Level: <br/>{product.roast_level}</p>
+                  </Typography>
+                  <Typography className="mt-1 text-sm">
+                  <p className="mt-5 mb-5 para text-lg">Flavours: <br/>[{product.flavor_profile.join(", ")}] </p>
+                  </Typography>
+                  <Typography className="mt-1 text-sm">
+                    <p className="mt-5 mb-5 para text-lg"> Grind Options: <br/>[{product.grind_option.join(", ")}] </p>
+                  </Typography>
+                  
+                  {/* Add to Cart and Like Section */}
+                  <div className="flex justify-between items-center mt-4">
+                    <button className="flex items-center gap-1 text-red-500 hover:text-red-600">
+                      Add to Cart <MdOutlineArrowRight />
+                    </button>
+                    <CiHeart className="text-2xl cursor-pointer hover:text-red-600" />
+                  </div>
+                </CardContent>
+              </CardActionArea>
+            </Card>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Coffee;

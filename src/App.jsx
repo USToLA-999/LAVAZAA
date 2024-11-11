@@ -27,7 +27,7 @@ function App() {
       <Recommded/>
       <Getintouch />
       <Footer/>
-      {/* <Coffee /> */}
+      <Coffee />
     </>
   );
 }
