@@ -28,8 +28,8 @@ const Recommded = () => {
             </div>
           </div>
         </div>
-        <div className="main-cardbox flex md:flex-row flex-col  sm:mt-10 sm:mb-10 gap-5 ">
-          <div className="card-box  flex flex-1 justify-center items-center mx-auto mt-5 mb-5   ">
+        <div className="main-cardbox flex md:flex-row flex-col  sm:mt-10 sm:mb-10 gap-5 sm:px-5 sm:py-5 px-5 py-5 ">
+          <div className="card-box  flex flex-1 justify-center items-center mx-auto mt-5 mb-5  sm:px-0 sm:py-0 px-5 py-5  ">
             
               <div className="card-boxer flex justify-center items-center   ">
                 <Card sx={{ maxWidth: 345,  borderRadius:5, boxSizing:'border-box' , boxShadow:'0 0 20px white' }} className="card-boxer"  >
@@ -42,7 +42,7 @@ const Recommded = () => {
                     />
                     <CardContent>
                       <Typography gutterBottom variant="h5" component="div"   >
-                        <p className="para">Lavazaa Coffee Mixer</p>
+                        <p className="para"> Coffee Mixer</p>
                       </Typography>
                       <Typography
                         variant="body2"

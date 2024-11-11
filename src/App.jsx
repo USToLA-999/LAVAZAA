@@ -11,6 +11,7 @@ import Branding from "./components/Branding";
 import Recommded from "./components/Recommded";
 import Getintouch from "./components/Getintouch";
 import Footer from "./components/Footer";
+import Coffee from "./pages/coffeesection/Coffee";
 
 
 
@@ -26,6 +27,7 @@ function App() {
       <Recommded/>
       <Getintouch />
       <Footer/>
+      {/* <Coffee /> */}
     </>
   );
 }

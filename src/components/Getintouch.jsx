@@ -1,4 +1,4 @@
-import React from "react";
+
 import sideimg from "../assets/gettouch.jpg";
 const Getintouch = () => {
   return (
@@ -16,7 +16,7 @@ const Getintouch = () => {
           </div>
         </div>
       </div>
-      <div className="main-box mt-5 text-white">
+      <div className="main-box mt-5 text-white sm:px-2 sm:py-0 px-5 py-5 ">
         <div className="container mainboxer rounded-lg  mx-auto ">
           <div className="headlines-portion  flex md:flex-row flex-col  sm:mt-10 sm:mb-10 gap-2  ">
             <div className="contentbox flex flex-initial sm:w-96 w-80 justify-center items-center mx-auto  ">
@@ -30,7 +30,7 @@ const Getintouch = () => {
             </div>
             <div className="contentbox flex flex-1 justify-center items-center mx-auto mt-5 ">
               <div className="innerbox max-w-5xl md:w-full  mx-auto ">
-                <div className="headerline md:w-full mx-auto sm:py-5 sm:px-5 ">
+                <div className="headerline md:w-full mx-auto sm:py-5 sm:px-5 px-5 py-5 ">
                   <h1 className="head sm:text-4xl text-3xl  bold text-center sm:px-0 leading-normal sm:py-0 px-2 py-2 font-bold sm:text-start">
                     Get your first drink for free!
                   </h1>
