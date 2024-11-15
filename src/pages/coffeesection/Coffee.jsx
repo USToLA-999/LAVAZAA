@@ -23,8 +23,8 @@ const Coffee = () => {
       <div className="container mx-auto px-4 py-10">
         
         {/* Section Header */}
-        <div className="text-center mb-10">
-          <h1 className="text-3xl sm:text-4xl font-bold underline underline-offset-8 decoration-red-800">
+        <div className="text-center mt-10 mb-10">
+          <h1 className="text-3xl head sm:text-4xl font-bold underline underline-offset-8 decoration-red-800">
             Our Coffee Products
           </h1>
           <hr className="mt-28 border-red-600 "  />
@@ -33,14 +33,14 @@ const Coffee = () => {
         {/* Card Container */}
         <div className=" grid grid-cols- md:grid-cols-2  lg:grid-cols-4 gap-8">
           {products.map((product) => (
-            <Card variant="body2"   sx={{ backgroundColor: 'black', color:'white',borderRadius:5, boxSizing:'border-box' , boxShadow:'0 0 20px red' }}
+            <Card variant="body2"   sx={{  color:'black',borderRadius:5, boxSizing:'border-box' , boxShadow:'0 0 20px red' }}
               key={product._id}
               className=" text-white rounded-xl overflow-hidden shadow-lg"
             >
               <CardActionArea >
                 <CardMedia
                   component="img"
-                  height="200"
+                  height="100"
                   image={product.image_url}
                   alt={product.name}
                 />
@@ -75,7 +75,7 @@ const Coffee = () => {
                   
                   {/* Add to Cart and Like Section */}
                   <div className="flex justify-between items-center mt-4">
-                    <button className="flex items-center gap-1 text-red-500 hover:text-red-600">
+                    <button className="para text-xl  underline  decoration-red-600 flex  hover:mx-2 ease-in duration-75">
                       Add to Cart <MdOutlineArrowRight />
                     </button>
                     <CiHeart className="text-2xl cursor-pointer hover:text-red-600" />

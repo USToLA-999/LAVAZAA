@@ -16,7 +16,7 @@ const Getintouch = () => {
           </div>
         </div>
       </div>
-      <div className="main-box mt-5 text-white sm:px-2 sm:py-0 px-5 py-5 ">
+      <div className="main-box mt-5 text-white sm:px-2 sm:py-0 px-2 py-5 ">
         <div className="container mainboxer rounded-lg  mx-auto ">
           <div className="headlines-portion  flex md:flex-row flex-col  sm:mt-10 sm:mb-10 gap-2  ">
             <div className="contentbox flex flex-initial sm:w-96 w-80 justify-center items-center mx-auto  ">

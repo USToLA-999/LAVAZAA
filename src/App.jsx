@@ -4,31 +4,22 @@ import "./output.css";
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import Navbar from "./components/Navbar";
-import Main from "./components/Main";
-import { Corousel } from "./components/corousel";
-import Branding from "./components/Branding";
-import Recommded from "./components/Recommded";
-import Getintouch from "./components/Getintouch";
-import Footer from "./components/Footer";
-import Coffee from "./pages/coffeesection/Coffee";
-
-
+import { Route, Routes } from "react-router-dom";
+import Home from "./components/Home";
+import CoffeePage from "./pages/coffeesection/CoffeePage";
+import MerchPage from "./pages/merchsection/MerchPage";
 
 function App() {
   return (
     <>
-    <div>
-      <Navbar />
-    </div>
-      <Main/>
-      <Corousel />
-      <Branding/>
-      <Recommded/>
-      <Getintouch />
-      <Footer/>
-      <Coffee />
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/coffee" element={<CoffeePage />} />
+      <Route path="/merch" element={<MerchPage />} />
+    </Routes>
+
     </>
+    
   );
 }
 
